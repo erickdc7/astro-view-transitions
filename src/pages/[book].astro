@@ -1,6 +1,18 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import { books } from "../data/books";
+
 const { book } = Astro.params
+
+const info = books.find(b => b.id === book)
+
+if (!info) {
+    return Astro.redirect("/404", 404)
+}
+
 ---
 
-<h1 class="text-9xl">{book}</h1>
+<Layout title='Libro'>
+    <h1>Libro</h1>
+</Layout>
 
