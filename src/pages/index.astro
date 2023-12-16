@@ -1,18 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Title from '../components/Title.astro';
+import ListOfBooks from '../components/ListOfBooks.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main class="m-auto max-w-4xl">
 		<Title />
 
-		<div class="grid grid-cols-2 md:grid-cols-2 gap-3">
-			<li>
-				<a class="hover:scale-105 inline-block transition-all hover:contrast-125 hover:shadow-2xl" href="/clean-code">
-					<img class="aspect-[389/500] h-full object-cover w-full max-w-full rounded" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436202607i/3735293.jpg" alt="Portada del libro Clean Code">
-				</a>
-			</li>
-		</div>
+		<ListOfBooks />
 	</main>
 </Layout>
