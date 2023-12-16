@@ -15,9 +15,12 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta name="view-transition" content="same-origin">
 	</head>
 	<body>
-		<slot />
+		<div id="content">
+			<slot />
+		</div>
 	</body>
 </html>
 <style is:global>
@@ -48,3 +51,34 @@ const { title } = Astro.props;
 			monospace;
 	}
 </style>
+
+<script>
+	if (document.startViewTransition) {
+		window.navigation.addEventListener('navigate',(event)=> {
+			const toUrl = new URL(event.destination.url)
+
+			// Es una página externa ? Si es así, lo ignoramos
+			if (location.origin !== toUrl.origin) return
+
+			// Si es una navegación en el mismo dominio (origen)
+			event.intercept({
+				async handler() {
+					// Vamos a cargar la página de destino
+					// utilizando un fetch para obtener el HTML
+					const response = await fetch(toUrl.pathname) // clean-code
+					const text = await response.text()
+					// quedarnos solo con el contenido del HTML dentro de la etiqueta body
+					// usamos un regex para extraer
+					const [, data] = text.match(/<body>([\s\S]*)<\/body>/i)
+
+					// Utilizar la View Transitions API
+					document.startViewTransition(() => {
+						// El scroll hacia arriba del todo
+						document.body.innerHTML = data
+						document.documentElement.scrollTop = 0
+					})
+				}
+			})
+		})
+	}
+</script>

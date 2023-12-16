@@ -3,7 +3,7 @@ export const books = [
          id: 'clean-code',
          title: 'Clean Code: Manual de desarrollo ágil de software',
          img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436202607i/3735293.jpg",
-         opinion: '',
+         opinion: 'Un clásico entre los clásicos del mundo de la programación.',
          author: 'Robert C. Martin'
     },
     {
