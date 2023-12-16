@@ -9,7 +9,8 @@
 		"plugin:@typescript-eslint/eslint-recommended",
 		"plugin:@typescript-eslint/recommended",
 		"eslint-config-prettier",
-		"standard"
+		"standard",
+		"plugin:astro/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -17,9 +18,7 @@
 		"sourceType": "module"
 	},
 	"rules": {
-		"space-before-function-paren": "off",
 		"no-unused-vars": "warn",
-		"@typescript-eslint/no-explicit-any": "warn",
 		"@typescript-eslint/no-unused-vars": [
 			"warn",
 			{
@@ -43,5 +42,22 @@
 			"prefer-single"
 		],
 		"eol-last": "off"
-	}
+	},
+	"overrides": [
+		{
+			"files": [
+				"*.astro"
+			],
+			"parser": "astro-eslint-parser",
+			"parserOptions": {
+				"parser": "@typescript-eslint/parser",
+				"extraFileExtensions": [
+					".astro"
+				]
+			},
+			"rules": {
+				"astro/no-set-html-directive": "error"
+			}
+		}
+	]
 }

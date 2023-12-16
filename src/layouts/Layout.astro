@@ -1,26 +1,30 @@
 ---
-interface Props {
+export interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Astro description">
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<meta name="view-transition" content="same-origin">
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@midudev" />
+		<meta name="view-transition" content="same-origin" />
 	</head>
 	<body>
 		<div id="content">
 			<slot />
 		</div>
+		<footer class="text-center opacity-70 py-10 text-sm">
+			Basado en el trabajo de <a class="text-sky-700 hover:underline" href='https://twitter.com/addyosmani/status/1673755274853900289?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Etweet%7Ctwtr%5Etrue'>Addy Osmani</a>
+		</footer>
 	</body>
 </html>
 <style is:global>
@@ -40,10 +44,9 @@ const { title } = Astro.props;
 	@keyframes fade-in {
 		from { opacity: 0; }
 	}
-	
 </style>
 
-<script src="../utils/navigation.js">
+<script>
 	if (document.startViewTransition) {
 		window.navigation.addEventListener('navigate', (event) => {
 			const toUrl = new URL(event.destination.url)
