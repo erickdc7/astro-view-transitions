@@ -1,54 +1,22 @@
-# Astro Starter Kit: Basics
+# Astro & View Transitions API
+Página web interactiva construida con Astro. Presenta una biblioteca de libros con transiciones suaves entre las páginas gracias a la View Transition API. Cada libro tiene su propia página con detalles como el título, un comentario y el autor. El proyecto también utiliza Tailwind CSS.
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Tecnologías
+Esta página web fue realizada con las siguientes tecnologías:
+- HTML5
+- CSS3
+- JavaScript
+- Astro
+- Tailwind CSS
+- Netlify
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Páginas
+Este proyecto contiene 2 páginas: **Inicio** y **Libro**.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Inicio
+#### En la página de inicio, se presenta una selección de libros de programación, cada uno con su propia página de detalles accesible con un solo clic.
+![preview banner section](src/assets/img/preview-banner.png)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Libro
+#### Al seleccionar un libro, serás redirigido a una página detallada que resalta aspectos clave del libro seleccionado, incluyendo el título, un comentario y la información del autor. Además, se ha incorporado un botón de navegación en la esquina superior izquierda que permite un retorno fácil y rápido a la página de inicio. Lo más destacado es la transición fluida entre las páginas, que proporciona una experiencia de usuario sin interrupciones.
+![preview skills section](src/assets/img/preview-skills.png)
