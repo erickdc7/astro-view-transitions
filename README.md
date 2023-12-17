@@ -15,8 +15,8 @@ Este proyecto contiene 2 páginas: **Inicio** y **Libro**.
 
 ### Inicio
 #### En la página de inicio, se presenta una selección de libros de programación, cada uno con su propia página de detalles accesible con un solo clic.
-![preview banner section](src/assets/img/preview-banner.png)
+![preview 1](src/images/preview-1.jpeg)
 
 ### Libro
 #### Al seleccionar un libro, serás redirigido a una página detallada que resalta aspectos clave del libro seleccionado, incluyendo el título, un comentario y la información del autor. Además, se ha incorporado un botón de navegación en la esquina superior izquierda que permite un retorno fácil y rápido a la página de inicio. Lo más destacado es la transición fluida entre las páginas, que proporciona una experiencia de usuario sin interrupciones.
-![preview skills section](src/assets/img/preview-skills.png)
+![preview 2](src/images/preview-2.jpeg)
