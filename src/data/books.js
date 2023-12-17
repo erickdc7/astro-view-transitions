@@ -3,35 +3,42 @@ export const books = [
        id: 'clean-code',
        title: 'Clean Code: Manual de desarrollo ágil de software',
        img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436202607i/3735293.jpg",
-       opinion: 'Un clásico entre los clásicos del mundo de la programación. Aunque en pleno 2023 yo tengo una opinión un poco polémica. No me parece un libro que recomendaría a todo el mundo, especialmente a aquellas personas que están aprendiendo. Además, tiene un tono muy dogmático y existe gente que se lo toma, peligrosamente, como la biblia del desarrollo. Pero si eres capaz de leerlo tomando perspectiva, hay cosas interesantes que todavía están vigentes. Ojo que todos los ejemplos de código están basados en Java y mucha programación orientada a objetos.',
+       opinion: 'El reconocido experto de software Robert C. Martin, junto con sus colegas de Object Mentor, nos presentan sus óptimas técnicas y metodologías ágiles para limpiar el código sobre la marcha y crearlo de forma correcta, de este modo mejorará como programador. Esta obra se divide en tres partes. La primera describe los principios, patrones y prácticas para escribir código limpio. La segunda presenta varios casos de estudio de complejidad creciente. Cada uno es un ejercicio de limpieza de código, y cada uno se analiza en detalle. La tercera parte es el resultado de varios años de trabajo, donde se comparten las mejores prácticas y técnicas de limpieza de código aplicadas a un proyecto real.',
        author: 'Robert C. Martin',
-     },
-     {
-       id: 'aprendiendo-git',
-       title: 'Aprendiendo Git',
-       img: "https://d2sofvawe08yqg.cloudfront.net/aprendiendo-git/s_hero2x?1628527844",
-       opinion: 'Un libro muy interesante para aprender Git. Mucho más allá de los comandos. Habla de buenas prácticas, estrategias de trabajo en equipo y flujos para mejorar la entrega de software. Además, está escrito por un autor español, lo que siempre es de agradecer.',
-       author: 'Miguel Angel Durán'
      },
      {
        id: 'the-clean-coder',
        title: 'The Clean Coder: A Code of Conduct for Professional Programmers',
        img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1347470803i/10284614.jpg",
-       opinion: '"The Clean Coder: Un Código de Conducta para Programadores Profesionales" es un libro excepcional que revoluciona la forma en que los programadores abordan su trabajo. Con sus ideas prácticas e inspiradoras, establece un nuevo estándar de profesionalismo en la industria del desarrollo de software. Su enfoque en la responsabilidad personal, el aprendizaje continuo y la comunicación efectiva, promueve la entrega de código limpio, la mejora constante y la colaboración en equipo. En resumen, este libro es una herramienta indispensable que empodera a los programadores para alcanzar la excelencia y contribuir al éxito de sus organizaciones.',
+       opinion: 'Este libro es una guía práctica y ética para los programadores profesionales. El autor, Robert C. Martin, comparte sus experiencias y consejos sobre cómo afrontar los desafíos y dilemas que surgen en el desarrollo de software, tales como estimar, codificar, probar, depurar, refactorizar, comunicar, colaborar, negociar, liderar, aprender y mejorar.',
        author: 'Robert C. Martin',
      },
      {
        id: 'javascript-the-good-parts',
        title: 'JavaScript: The Good Parts',
        img: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328834793i/2998152.jpg',
-       opinion: '"JavaScript: The Good Parts" es un libro imprescindible que destaca las mejores prácticas y características esenciales de JavaScript. A través de una visión concisa y perspicaz, el autor nos guía por el mundo de este lenguaje, revelando su potencial y resaltando sus aspectos más poderosos y efectivos. Con un enfoque en la simplicidad y la elegancia, el libro ofrece una guía práctica para aprovechar al máximo las partes más sólidas y confiables de JavaScript, permitiéndonos escribir un código claro y eficiente. En resumen, esta obra es una valiosa herramienta para cualquier desarrollador que desee dominar el arte de programar con JavaScript.',
+       opinion: 'Este libro es una guía práctica para aprender y usar las mejores partes de JavaScript, el lenguaje de programación más popular de la web. El autor, Douglas Crockford, es un reconocido experto en JavaScript que ha contribuido a su desarrollo y estandarización. En este libro, Crockford identifica y explica las características más elegantes, fiables y expresivas de JavaScript, como las funciones, los objetos, las expresiones regulares, el estilo y las convenciones.',
        author: 'Douglas Crockford',
      },
      {
        id: 'eloquent-javascript',
        title: 'Eloquent JavaScript: A Modern Introduction to Programming',
        img: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1308260856i/8910666.jpg',
-       opinion: '"Eloquent JavaScript" es un libro extraordinario que lleva a los lectores en un viaje apasionante a través del mundo de la programación en JavaScript. Con un enfoque amigable y accesible, el autor nos introduce en los conceptos fundamentales del lenguaje y nos guía hábilmente a través de ejercicios prácticos y desafiantes. Con una combinación equilibrada de teoría y práctica, el libro fomenta el pensamiento lógico y creativo, y nos enseña a desarrollar soluciones elegantes y eficientes. En resumen, "Eloquent JavaScript" es una guía imprescindible para aquellos que desean dominar este poderoso lenguaje de programación y explorar todo su potencial.',
+       opinion: 'Este libro es una introducción moderna y práctica a la programación con JavaScript, que te enseña a escribir código elegante, efectivo y expresivo. El autor, Marijn Haverbeke, es un reconocido experto en JavaScript que ha contribuido a su desarrollo y estandarización. En este libro, Haverbeke te guía a través de los conceptos esenciales del lenguaje, como los valores, las variables, las funciones, los objetos, las expresiones regulares, los módulos y la programación asíncrona.',
        author: 'Marijn Haverbeke',
+     },
+     {
+       id: 'design-patterns',
+       title: 'Design Patterns: Elements of Reusable Object-Oriented Software',
+       img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348027904i/85009.jpg",
+       opinion: 'Este libro es una guía práctica para aprender y usar los patrones de diseño, que son soluciones simples y elegantes para problemas específicos del diseño de software orientado a objetos. Los autores, Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides, introducen los principios de los patrones de diseño y ofrecen un catálogo de 23 patrones, clasificados en tres categorías: creación, estructura y comportamiento.',
+       author: 'Erich Gamma, Grady Booch, Richard Helm, Ralph Johnson, John Vlissides'
+     },
+     {
+       id: 'the-pragmatic-programmer',
+       title: 'The Pragmatic Programmer: From Journeyman to Master',
+       img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1401432508i/4099.jpg",
+       opinion: 'Este libro se centra en el proceso central de la programación: tomar un requisito y producir un código funcional y mantenible que deleite a sus usuarios. El libro cubre temas que van desde la responsabilidad personal y el desarrollo de la carrera hasta técnicas arquitectónicas para mantener tu código flexible y fácil de adaptar y reutilizar.',
+       author: 'Andy Hunt, Dave Thomas'
      }
    ]
